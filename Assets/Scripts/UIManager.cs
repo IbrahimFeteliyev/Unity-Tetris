@@ -10,8 +10,8 @@ public class UIManager : MonoBehaviour
 
     public void Restart()
     {
-        gameObject.SetActive(false);
         Time.timeScale = 1f;
+        gameObject.SetActive(false);
         GameObject boardObject = GameObject.Find("Board");
         Tilemap boardTilemap = boardObject.GetComponentInChildren<Tilemap>();
         boardTilemap.ClearAllTiles();
